@@ -32,10 +32,10 @@ This is a simple command-line application designed to help users record and list
 *The program consists of two classes:*
 
 ### TipDB: Manages the application's flow, including user input and the list of hair care tips.
-run: Main loop for the CLI.
-add_tip: Allows the user to add a hair care tip.
-list_tips: Displays all saved hair care tips.
+- run: Main loop for the CLI.
+- add_tip: Allows the user to add a hair care tip.
+- list_tips: Displays all saved hair care tips.
 
 ### Tip: Represents a single hair care tip.
-description: Stores the content of the hair care tip.
-to_s: Converts the hair care tip to a string for easy display.
+- description: Stores the content of the hair care tip.
+- to_s: Converts the hair care tip to a string for easy display.
