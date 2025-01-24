@@ -29,17 +29,23 @@ class TipDB
     end
   end
 
-  def add_tip
-    puts "Add your hair care tip"
-    description = gets.chomp
+  def add_tip(description=nil)
+   unless description
+      puts "Add your hair care tip"
+      description = gets.chomp
+   end 
     @tips << Tip.new(description)
     puts "Hair care tip successful stored."
   end
 
-  def list_tips
-    puts "Hair care tips: "
-    @tips.each do |tip|
-      puts tip
+  def list_tips(tips=[])
+    if tips.empty? 
+      "No tips yet."
+    else
+      "Hair care tips: "
+      @tips.each do |tip|
+        tips.push(tip)
+      end 
     end 
   end 
   
