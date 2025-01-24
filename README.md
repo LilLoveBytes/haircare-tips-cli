@@ -18,7 +18,7 @@ This is a simple command-line application designed to help users record and list
 1. Clone this repository or download the files:
    ```bash
    git clone <https://github.com/LilLoveBytes/haircare-tips-cli.git>
-   cd hair-care-tips-cli
+   ```
 
 ## Usage
 - Run the program by executing: 
