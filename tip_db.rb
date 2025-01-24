@@ -38,13 +38,13 @@ class TipDB
     puts "Hair care tip successful stored."
   end
 
-  def list_tips(tips=[])
-    if tips.empty? 
-      "No tips yet."
+  def list_tips()
+    if @tips.empty? 
+      puts "No tips yet."
     else
       "Hair care tips: "
       @tips.each do |tip|
-        tips.push(tip)
+        puts tip
       end 
     end 
   end 
